@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="web icon" href="image/html.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Артем Иващенко</title>
+</head>
+<body>
+    <header class="displ-fl">
+        <p class="logo montserrat blue">Портфолио</p>
+        <nav id="nav-cont" class="head-nav-cont displ-fl">
+            <a href="#info" class="link-header montserrat blue">О себе</a>
+            <a href="#skill" class="link-header montserrat blue">Навыки</a>
+            <a href="#contact" class="link-header montserrat blue">Контакты</a>
+        </nav>
+        <button id="btn-nav" onclick="menu()">☰</button>
+    </header>
+    <script type="text/javascript">
+        let nav = document.getElementById('nav-cont');
+        let button = document.getElementById('btn-nav');
+        let indicator = document.getElementById('indicator');
+
+        function menu(){
+            nav.classList.toggle('active');
+
+            if (nav.classList.contains('active')){
+                button.innerText='✕';
+            } else{
+                button.innerText='☰';
+            }
+        }
+
+    </script>
+    <main>
+        <section class="hero-cont displ-fl">
+            <div class="left-hero displ-fl">
+                <h1 class="h1-hero light-purple sansation">Привет, я<br><span class="name blue">Артем</span><br>Frontend-<br>разработчик</h1>
+                <p class="p-hero light-purple montserrat">Начинающий frontend-разработчик со стеком React, JavaScript и адаптивной версткой — быстро обучаюсь, внимателен к деталям, готов выполнить тестовое задание и присоединиться к команде профессионалов для решения реальных задач.</p>
+                <div class="btn-hero-cont displ-fl">
+                    <a href="#project" class="btn-hero montserrat"><img src="image/strela.png" alt=""> Проекты</a>
+                    <a href="#contact" class="btn-hero montserrat"><img src="image/phone.png" alt=""> Контакты</a>
+                    <a href="image/resume.pdf" class="btn-hero montserrat"><img src="image/download.png" alt=""> Скачать резюме</a>
+                </div>
+            </div>
+            <div class="right-hero">
+                <img src="image/html.png" alt="HTML">
+            </div>
+        </section>
+        <hr>
+        <section id="info" class="info-cont displ-fl">
+            <div class="h-cont montserrat light-purple">О Себе</div>
+            <div class="all-info displ-fl">
+                <div class="info-box displ-fl">
+                    <h2 class="montserrat light-purple">Основная информация</h2>
+                    <p class="montserrat bl-purple">Артем Иващенко | 18 лет | г.Барнаул | Frontend-разработчик</p>
+                </div>
+                <div class="info-box displ-fl">
+                    <h2 class="montserrat light-purple">Образование</h2>
+                    <p class="montserrat bl-purple">Алтайский государственный технический университет им. И. И. Ползунова (АлтГТУ). Специальность «09.02.07 Информационные системы и программирование». Период обучения 2023 — настоящее время</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="skill" class="info-cont displ-fl">
+            <div class="h-cont montserrat light-purple">Стек технологий</div>
+            <div class="technology-cont displ-fl">
+                <p class="techno-link montserrat light-purple">JavaScript</p>
+                <p class="techno-link montserrat light-purple">React.js</p>
+                <p class="techno-link montserrat light-purple">Git & GitHub</p>
+                <p class="techno-link montserrat light-purple">HTML5</p>
+                <p class="techno-link montserrat light-purple">Figma</p>
+                <p class="techno-link montserrat light-purple">WordPress</p>
+                <p class="techno-link montserrat light-purple">CSS3</p>
+                <p class="techno-link montserrat light-purple">Bootstrap</p>
+                <p class="techno-link montserrat light-purple">Python</p>
+                <p class="techno-link montserrat light-purple">MySQL</p>
+                <p class="techno-link montserrat light-purple">PHP</p>
+            </div>
+        </section>
+        <hr>
+        <section id="project" class="info-cont displ-fl">
+            <div class="h-cont montserrat light-purple">Проекты</div>
+            <div class="projects-cont displ-fl">
+                <div class="poject-box displ-fl">
+                    <p class="name-project montserrat blue">Apple store</p>
+                    <p class="p-description montserrat light-purple">Интерактивная панель аналитики с графиками, фильтрами и экспортом данных. Оптимизированная производительность и real-time обновления.</p>
+                    <a href="https://tampliyer28.github.io/istore/" class="link-project montserrat blue displ-fl"><img src="image/link.png" alt=""> Смотреть</a>
+                </div>
+                <div class="poject-box displ-fl">
+                    <p class="name-project montserrat blue">Apple store</p>
+                    <p class="p-description montserrat light-purple">Интерактивная панель аналитики с графиками, фильтрами и экспортом данных. Оптимизированная производительность и real-time обновления.</p>
+                    <a href="https://tampliyer28.github.io/istore/" class="link-project montserrat blue displ-fl"><img src="image/link.png" alt=""> Смотреть</a>
+                </div>
+                <div class="poject-box displ-fl">
+                    <p class="name-project montserrat blue">Apple store</p>
+                    <p class="p-description montserrat light-purple">Интерактивная панель аналитики с графиками, фильтрами и экспортом данных. Оптимизированная производительность и real-time обновления.</p>
+                    <a href="https://tampliyer28.github.io/istore/" class="link-project montserrat blue displ-fl"><img src="image/link.png" alt=""> Смотреть</a>
+                </div>
+                <div class="poject-box displ-fl">
+                    <p class="name-project montserrat blue">Apple store</p>
+                    <p class="p-description montserrat light-purple">Интерактивная панель аналитики с графиками, фильтрами и экспортом данных. Оптимизированная производительность и real-time обновления.</p>
+                    <a href="https://tampliyer28.github.io/istore/" class="link-project montserrat blue displ-fl"><img src="image/link.png" alt=""> Смотреть</a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="contact" class="info-cont displ-fl">
+            <div class="h-cont montserrat light-purple">Контакты</div>
+            <div class="projects-cont displ-fl">
+                <div class="contact-box displ-fl">
+                    <img class="img-contact" src="image/email.png" alt="Email">
+                    <p class="p-contact montserrat white">Email</p>
+                    <a href="mailto:artem.ivashchenko.28@mail.ru" class="link-contact montserrat light-purple">artem.ivashchenko.28@mail.ru</a>
+                </div>
+
+                <div class="contact-box displ-fl">
+                    <img class="img-contact" src="image/git.png" alt="GitHub">
+                    <p class="p-contact montserrat white">GitHub</p>
+                    <a href="https://github.com/Tampliyer28" class="link-contact montserrat light-purple">github.com/Tampliyer28</a>
+                </div>
+
+                <div class="contact-box displ-fl">
+                    <img class="img-contact" src="image/tg.png" alt="Telegram">
+                    <p class="p-contact montserrat white">Telegram</p>
+                    <a href="https://t.me/Tampliyer22" class="link-contact montserrat light-purple">@Tampliyer22</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p class="montserrat light-purple">© 2026 Артем Веб-разработчик.</p>
+    </footer>
+</body>
+</html>

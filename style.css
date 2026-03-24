@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color */
+.tt{
+    border: 1px solid red;
+}
+
+.blue{
+    color: #3B82F6;
+}
+
+.white{
+    color: #fff;
+}
+
+.light-purple{
+    color: #CBD5E6;
+}
+
+.bl-purple{
+    color: #a9b2c2;
+}
+/* default */
+::-webkit-scrollbar {
+  width: 11px;          
+  height: 12px;         
+}
+
+/* Полоса скролла */
+::-webkit-scrollbar-track {
+  background: #CBD5E6;  
+  border-radius: 10px;
+}
+
+/* Бегунок скролла */
+::-webkit-scrollbar-thumb {
+  background: #3B82F6;      
+  border-radius: 10px;
+}
+
+/* Бегунок при наведении */
+::-webkit-scrollbar-thumb:hover {
+  background: #2A64C3;
+}
+
+.montserrat{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sansation {
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.displ-fl{
+    display: flex;
+}
+
+hr{
+    max-width: 1200px;
+    margin: 80px auto;
+    height: 1px;
+    border-color: rgb(59, 130, 246, 0.15);
+    box-shadow: 0 0 4px 1px rgb(59, 130, 246, 0.15);
+}
+
+/* body */
+body{
+    background-color: #0A0C10;
+}
+
+/* header */
+header{
+    justify-content: space-between;
+    align-items: center;
+    margin:  0 auto 140px auto;
+    max-width: 1200px;
+    padding: 25px 20px;
+}
+
+.logo{
+    font-weight: 600;
+    letter-spacing: 15%;
+    font-size: 28px;
+}
+
+.head-nav-cont{
+    gap: 65px;
+}
+
+.link-header{
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #3B82F6;
+    border-radius: 30px;
+    box-shadow: 0 0 4px 1px #3B82F6;
+    transition: all 0.2s;
+}
+
+.link-header:hover{
+    background-color: #3B82F6;
+    color: #dddddd;
+    box-shadow: 0 3px 10px 4px #3B82F6;
+    transform: translateY(-5px);
+}
+
+/* hero */
+.hero-cont{
+    margin: 0 auto 140px auto;
+    max-width: 1200px;
+
+}
+
+.left-hero{
+    flex-direction: column;
+    gap: 15px;
+}
+
+.h1-hero{
+    width: 100%;
+    font-size: 72px;
+    background: linear-gradient(135deg, #FFFFFF 0%, #94a3f8 100%);
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+#btn-nav{
+    display: none;
+}
+
+.name{
+    font-size: 72px;
+}
+
+.p-hero{
+    width: 60%;
+}
+
+.btn-hero-cont{
+    flex-wrap: wrap;
+
+    gap: 45px;
+}
+
+.btn-hero{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 20px;
+    border: 1.5px solid #3B82F6;
+    border-radius: 30px;
+    transition: all 0.2s;
+}
+
+.btn-hero:nth-child(1){
+    background-color: #2A64C3;
+    box-shadow: 0 2px 5px 1px #3B82F6;
+}
+
+.btn-hero:nth-child(1):hover{
+    transform: translateY(-5px);
+}
+
+.btn-hero:hover{
+    background-color: #3b83f62b;
+    transform: translateY(-5px);
+}
+/* о себе */
+.info-cont{
+    margin: auto;
+    max-width: 1200px;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.h-cont{
+    font-weight: 600;
+    font-size: 32px;
+    text-decoration: underline;
+    text-decoration-color: #3B82F6; 
+    text-decoration-thickness: 2px; 
+    text-underline-offset: 4px; 
+}
+
+.all-info{
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-box{
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 15px;
+    border-left: 1px solid #3B82F6;
+}
+
+.info-box h2 {
+    font-weight: 500;
+}
+
+.technology-cont{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.techno-link{
+    background-color: #0F1219;
+    border-radius: 30px;
+    border: 1px solid #1F2937;
+    padding: 10px 15px;
+    transition: all 0.2s;
+}
+
+.techno-link:hover{
+    border: 1px solid #3B82F6;
+    box-shadow: 0 1px 3px 0px #3B82F6;
+    transform: translateY(-5px);
+}
+
+/* проекты */
+.projects-cont{
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.poject-box{
+    flex: 1 1 250px;
+    height: 210px;
+    background-color: #0F1219;
+    border-radius: 20px;
+    border: 1px solid #1F2937;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+}
+
+.name-project{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.p-description {
+    font-size: 14px;
+}
+
+.link-project{
+    text-decoration: none;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.2s;
+}
+
+.link-project:hover{
+    color: #2A64C3;
+}
+
+.contact-box{
+    width: 290px;
+    height: 135px;
+    background-color: #0F1219;
+    border-radius: 20px;
+    border: 1px solid #1F2937;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.img-contact{
+    width: 38px;
+}
+
+.p-contact{
+    font-weight: 700;
+}
+
+.link-contact{
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.link-contact:hover{
+    color: #2A64C3;
+}
+
+footer{
+    text-align: center;
+}
+
+footer hr{
+    max-width: 1200px;
+    margin: 80px auto 20px auto;
+    height: 1px;
+    border-color: rgb(59, 130, 246, 0.15);
+    box-shadow: 0 0 4px 1px rgb(59, 130, 246, 0.15);
+}
+
+footer p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* адаптив */
+@media (max-width: 1100px){
+    .hero-cont{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .left-hero {
+        align-items: center;
+    }
+
+    .h1-hero {
+        font-size: 48px;
+        width: 100%;
+    }
+
+    .name {
+        font-size: 48px;
+    }
+
+    .p-hero {
+        width: 90%;
+    }
+
+    .btn-hero-cont {
+        justify-content: center;
+        width: 100%;
+    }
+
+    main {
+        padding: 0 20px;
+    }
+
+    .projects-cont {
+        justify-content: center;
+    }
+
+    /* Стили для мобильного меню */
+    .head-nav-cont {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: #0F1219;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.3);
+        border-left: 2px solid #3B82F6;
+    }
+
+    .head-nav-cont.active {
+        right: 0;
+    }
+
+    .link-header {
+        border: 1px solid #3B82F6;
+        font-size: 18px;
+        width: 80%;
+        text-align: center;
+        background-color: #0A0C10;
+        margin: 0;
+    }
+
+    #btn-nav {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: #3B82F6;
+        z-index: 1001;
+        position: relative;
+    }
+}
